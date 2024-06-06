@@ -1,0 +1,138 @@
+.footer {
+  padding-top: 40px;
+
+ 
+
+  &__logo {
+    width: 287px;
+    height: 177px;
+  }
+
+  &__footer {
+    background-color: $border-dark-gray;
+  }
+
+  &__row {
+    display: flex;
+    padding-top: 30px;
+  }
+
+  &__nav {
+    padding-left: 170px;
+    padding-right: 100px;
+  }
+
+  &__h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-white;
+    padding-bottom: 10px;
+  }
+
+  &__list {
+    line-height: 30px;
+
+    &:last-child {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__hr {
+    height: 104px;
+    border-color: $text-gray;
+    margin: 0;
+    margin-top: 35px;
+  }
+
+  &__about {
+    color: $text-white;
+    margin-left: 150px;
+  }
+
+  &__subtitle {
+    color: $text-gray;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  &__hr1 {
+    width: 1800px;
+    border-color: $text-gray;
+  }
+
+  &__wor {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .icon {
+    display: flex;
+    gap: 15px;
+
+    &__icon {
+      path,
+      circle {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        path {
+          fill: $bg-aqua;
+        }
+
+        circle {
+          stroke: $bg-aqua;
+        }
+      }
+    }
+  }
+
+  &__all {
+    color: $text-gray;
+  }
+
+  &__a {
+    color: $text-gray;
+
+    &:hover {
+      color: $text-aqua;
+    }
+  }
+
+  &__link {
+    color: $text-white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 2px;
+      background-color: $bg-aqua;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: $text-aqua;
+
+      &::before {
+        left: -20px;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+      }
+    }
+  }
+}

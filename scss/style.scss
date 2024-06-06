@@ -1,0 +1,29 @@
+// Сторонние библиотеки
+@import "./vendors/reset";
+
+// SCSS переменнные
+@import "./variables";
+
+// Повторяемые куски кода
+@import "./components/typography";
+@import "./components/grid";
+@import "./components/header";
+@import "./sections/footer";
+
+// Секции сайта
+@import "./sections/main-hero";
+@import "./sections/selections";
+@import "./sections/film-info";
+
+
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: $bg-black;
+}
