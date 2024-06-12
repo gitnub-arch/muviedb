@@ -1,0 +1,193 @@
+.films {
+    position: relative;
+    max-width: 1340px;
+    overflow: hidden;
+
+    &__row {
+        display: flex;
+    }
+
+    &__row2 {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__column {
+        width: 20%;
+    }
+
+    &__play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.2s;
+    }
+
+    &__watch {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%) scale(0);
+        color: $text-white;
+        font-size: 14px;
+        font-weight: 400;
+        transition: 0.3s;
+    }
+
+    &__poster {
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+
+            .films__image {
+                opacity: 0.4;
+            }
+
+            .films__play {
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            .films__watch {
+                top: 60%;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 380px;
+        border-radius: 5px;
+        transition: 0.3s;
+        margin-left: -10px;
+    }
+
+    &__image2 {
+        width: 100%;
+         margin-right: 90px;
+        height: 100%;
+        border-radius: 5px;
+        transition: 0.3s;
+        margin-left: -10px;
+    }
+
+    &__kinopoisk, 
+    &__imdb {
+        position: absolute;
+        left: 1px;
+        width: 71px;
+        height: 34px;
+    }
+
+    &__kinopoisk {
+        top: 10px;
+    }
+
+    &__imdb {
+        top: 50px;
+    }
+
+    &__subtitle {
+        margin: 20px 0 10px;
+
+    }
+
+    &__subtitle2 {
+        margin: 5px 0 10px;
+        margin-left: 10px;
+    }
+
+    &__subtitle3 {
+        margin: 5px 0 10px;
+        margin-left: 5px;
+    }
+
+    &__info {
+        font-size: 20px;
+        font-weight: 400;
+        color: $text-white;
+    }
+    &__info2 {
+        font-size: 20px;
+        font-weight: 400;
+        color: $text-white;
+        margin-left: 5px;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .films {
+        &__image {
+            opacity: 1 !important;
+        }
+
+        &__play, 
+        &__watch {
+            display: none;
+        }
+
+        &__subtitle {
+            margin: 10px 0 5px;
+        }
+
+        &__info {
+            font-size: 14px;
+        }
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.65%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.64%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.63%;
+}
+
+.col-12 {
+    width: 100%;
+}

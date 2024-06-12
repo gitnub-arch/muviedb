@@ -1,0 +1,49 @@
+// Сторонние библиотеки
+@import "./vendors/reset";
+
+// SCSS переменнные
+@import "./variables";
+@import "./animations";
+
+// Повторяемые куски кода
+@import "./components/typography";
+@import "./components/grid";
+@import "./components/header";
+@import "./components/footer";
+
+// Секции сайта
+@import "./sections/main-hero";
+@import "./sections/selections";
+@import "./sections/film-info";
+
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: $bg-black;
+    overflow-x: hidden;
+}
+
+
+@media screen and (max-width: 1560px) {
+    .container {
+        max-width: 1270px;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+a {
+    display: block;
+}
